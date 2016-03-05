@@ -1,2 +1,8 @@
-%h1
-  Hello World!
+%form{:action => "/users/create", :method => "post", "accept-charset" => "UTF-8"}
+  %h4
+    Please choose your username:
+  <input type = "text" value = "username">
+  %h4
+    Please enter your email:
+  <input type = "text" value = "email">
+  <input type = "submit" value = "Submit">
