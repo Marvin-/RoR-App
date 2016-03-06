@@ -1,8 +1,21 @@
-%form{:action => "/users/create", :method => "post", "accept-charset" => "UTF-8"}
+%form{:action => "/users", :method => "post", "accept-charset" => "UTF-8"}
   %h4
-    Please choose your username:
-  <input type = "text" value = "username">
-  %h4
-    Please enter your email:
-  <input type = "text" value = "email">
-  <input type = "submit" value = "Submit">
+    Please fill in the form below
+  %fieldset
+    %label{:for => "username"}
+      Username: 
+    %input{ :type => "text", :placeholder => "username", :name => "user[username]", :id => "username"} 
+    %br
+    %br
+    %label{:for => "email"}
+      Email: 
+    %input{:type => "email", :placeholder => "email", :name => "user[email]", :id => "email"} 
+    %br
+    %br
+    %label{:for => "password"}
+      Password: 
+    %input{:type => "password", :name => "user[password]", :placeholder => "password", :id => "password"}
+    %br
+    %br
+    %input{:type => "submit", :value => "Submit"} 
+    %input{:type => "hidden", :name => "authenticity_token", :value => "= form_authenticity_token"}
