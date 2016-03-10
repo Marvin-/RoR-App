@@ -1,1 +1,6 @@
+= provide(:title, @user.username)
+%br
+  = gravatar_for @user
+  = @user.username
+%br
 = link_to "Edit", edit_user_path(@user)
