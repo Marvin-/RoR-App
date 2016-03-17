@@ -10,7 +10,8 @@
   %body
     = render 'layouts/header'
     .container
+      - flash.each do |message_type, message|
+        .alert.alert-success
+          = message
       = yield
       = render 'layouts/footer'
-
-
