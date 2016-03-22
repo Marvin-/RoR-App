@@ -11,6 +11,6 @@
 #   password: MyString
 
 marvin:
-  name: Marvin Example
+  username: Marvin Example
   email: marvin@example.com
-  password_digest: <% = User.digest('password') %>
+  password_digest: <%= User.digest('password') %>
