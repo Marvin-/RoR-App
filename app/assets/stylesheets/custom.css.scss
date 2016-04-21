@@ -141,11 +141,26 @@ input {
 }
 
 .jumbotron {
-  background-color: #1E90FF;
+  background-color: #343838;
 }
 
 .btn-primary {
-  background-color: #FF1493;
+  background-color: #18393E;
+}
+
+.nav-container {
+  background-color: #343838 !important;
 }
 
 
+.navbar-inverse {
+  background-color: #005F6B;
+}
+
+#fullname {
+  color: #008C9E;
+}
+
+.center h1 {
+  color: #00DFFC;
+}
