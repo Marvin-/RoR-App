@@ -14,3 +14,8 @@ marvin:
   username: Marvin Example
   email: marvin@example.com
   password_digest: <%= User.digest('password') %>
+
+queen:
+  username: Queen B
+  email: queen@palace.com
+  password_digest: <%= User.digest('password') %>
